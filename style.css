@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #314960;
+  background-color: #fbfbfb;
+}
+.container {
+  width: 116.9rem;
+  min-height: 100vh;
+  padding-top: 11.3rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header .heading {
+  margin-right: 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.header .btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #d0021b;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.header .btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px -1px #d0021b;
+}
+
+.section {
+  min-height: 55.1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #344b60;
+  border-radius: 12px;
+  padding: 2.3rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content-table {
+  border-collapse: collapse;
+  min-width: 113.3rem;
+}
+
+.content-table thead tr th {
+  text-align: left;
+  padding-bottom: 1.6rem;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+.content-table tbody tr:hover {
+  background-color: #e4eef8;
+}
+
+.content-table td {
+  padding: 2rem 0;
+}
+
+.content-table .avatar {
+  margin: 0 1rem;
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.content-table .avatar,
+.content-table .name {
+  vertical-align: middle;
+}
+
+.content-table .cellbtn {
+  width: 5rem;
+}
+
+.content-table .cellbtn .binimg {
+  margin: 0 1rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.content-table tbody tr .binbtn {
+  display: none;
+}
+
+.content-table tbody tr:hover .binbtn {
+  display: block;
+  margin-right: 1.3rem;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 2.3rem;
+  color: #d8d8d8;
+}
+
+.inviteBtn {
+  cursor: pointer;
+  border: none;
+  margin-left: 3px;
+}
