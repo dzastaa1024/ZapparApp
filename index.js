@@ -5,7 +5,7 @@ let users = [
     name: "Erica Badu",
     email: "e.badu@example.com",
     role: "Owner",
-    isActive: true
+    isActive: true,
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ let users = [
     name: "Pat Nelsson",
     email: "p.nelsson@example.com",
     role: "Admin",
-    isActive: true
+    isActive: true,
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ let users = [
     name: "Pending acceptance",
     email: "j.dog@example.com",
     role: "Standard",
-    isActive: false
+    isActive: false,
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ let users = [
     name: "Amy Namy",
     email: "a.namy@example.com",
     role: "Standard",
-    isActive: true
+    isActive: true,
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ let users = [
     name: "Victor D.",
     email: "v.d@example.com",
     role: "Standard",
-    isActive: true
+    isActive: true,
   },
   {
     id: "6",
@@ -45,12 +45,12 @@ let users = [
     name: "Olly",
     email: "o.hunter@example.com",
     role: "Standard",
-    isActive: true
-  }
+    isActive: true,
+  },
 ];
 
-const activeMembers = users => {
-  const numOfActiveMembers = users.filter(user => user.isActive).length;
+const activeMembers = (users) => {
+  const numOfActiveMembers = users.filter((user) => user.isActive).length;
   const member = document.querySelector(".activeMembers");
   member.innerText = `${numOfActiveMembers} / ${users.length}`;
 };
@@ -67,13 +67,13 @@ function createUser(user) {
   const cellBtn = document.createElement("td");
   cellBtn.classList.add("cellbtn");
 
-  //binbtn
+  //binbutton
   const binimg = document.createElement("img");
   binimg.src = "./bin-icon.svg";
   binimg.classList.add("binbtn");
 
-  binimg.addEventListener("click", function() {
-    const newUsersList = users.filter(_user => {
+  binimg.addEventListener("click", function () {
+    const newUsersList = users.filter((_user) => {
       return _user.id !== user.id;
     });
     users = newUsersList;
@@ -119,7 +119,7 @@ function addNewUser() {
     name: namesRandom[randomNumber],
     email: `${namesRandom[randomNumber]}@example.com`,
     role: rolesRandom[randomNumber2],
-    isActive: false
+    isActive: false,
   };
   users.push(newUser);
   createUser(newUser);
@@ -128,7 +128,7 @@ function addNewUser() {
 
 function render() {
   table.innerHTML = "";
-  users.forEach(user => {
+  users.forEach((user) => {
     createUser(user);
   });
 }
